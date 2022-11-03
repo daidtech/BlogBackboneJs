@@ -14,15 +14,38 @@
     <table class="table">
       <thead>
         <tr>
-          <th> Title </th>
+          <th> Author </th>
           <th> Title </th>
           <th> URL </th>
           <th> Action </th>
         </tr>
+        <tr>
+          <td>ll</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
       </thead>
+      <tbody class="blogs-list">
+        <tr>
+          <td><input class="author-input"></td>
+          <td><input class="title-input"></td>
+          <td><input class="url-input"></td>
+          <td><button class="bn btn-primary add-blog">Add</button></td>
+        </tr>
+      </tbody>
     </table>
   </div>
 
+  <script type="text/template" class="blogs-list-template">
+    <td><span class="author"><%= author %></span></td>
+    <td><span class="title"><%= title %></span></td>
+    <td><span class="url"><%= url %></span></td>
+    <td>
+      <button class="btn btn-warning edit-blog">Edit</button>
+      <button class="btn btn-danger delete-blog">Delete</button>
+    </td>
+  </script>
 
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/underscore/underscore.js"></script>
